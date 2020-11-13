@@ -1,3 +1,25 @@
+.btn_type1{
+  text-decoration: none;
+  width: 290px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  //transition: background-color 3s;
+
+  font-size: 18px;
+  line-height: 1;
+  color: $black;
+
+  background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
+  border-radius: 30px;
+
+  &:hover, &:active {
+    background: linear-gradient(89.86deg, $primary2 0.1%, $primary1 99.88%);
+  }
+}
+
 .sale_btn {
   text-decoration: none;
   width: 322px;

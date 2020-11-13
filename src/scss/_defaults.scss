@@ -8,6 +8,7 @@ body {
 
 body {
 	//font-family: $font-main;
+	background: $black;
 }
 
 .popup-opened{
@@ -24,6 +25,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .black_friday_2020.container *{
 	font-family: $font-main !important;
 }
@@ -56,5 +58,5 @@ img{
 
 .wrap {
 	//@include min-max(320px, 1600px, 18%);
-	@include min-max(320px, 1600px, 150px);
+	@include min-max(320px, 1024px, 0);
 }
