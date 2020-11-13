@@ -1,0 +1,276 @@
+.banner {
+  background: url("https://cdn.parfums.ua/public/upload/newAdminUpload/RichContent/900542/bg.jpg") center top no-repeat;
+  background-size: cover;
+  padding: 110px 12.5% 40px;
+
+  .banner_top {
+    .banner_logo_block {
+      display: flex;
+      align-items: flex-end;
+
+      .banner_top_text1 {
+        font-size: 55px;
+        line-height: 71px;
+        color: $white;
+      }
+
+      .banner_top_text2 {
+        font-size: 55px;
+        line-height: 71px;
+        color: $white;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    .banner_top_marked {
+      position: relative;
+      font-size: 55px;
+      line-height: 71px;
+      color: $white;
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 5px;
+        left: -24px;
+        background: #E91E77;
+        transform: rotate(-3deg);
+        width: 405px;
+        height: 63px;
+      }
+
+      span {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  .banner_bottom {
+    .banner_bottom_text {
+      margin-top: 80px;
+      margin-bottom: 48px;
+      font-size: 24px;
+      line-height: 29px;
+      color: $primary3;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+
+    .banner_list {
+      display: flex;
+
+      .banner_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        flex-basis: 175px;
+
+        &:not(:last-child) {
+          margin-right: 1.8%;
+        }
+
+        .banner_item_text {
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          color: $white;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+.banner_mob{
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .banner {
+    background: url("https://cdn.parfums.ua/public/upload/newAdminUpload/RichContent/900542/bg.jpg") center top no-repeat;
+    background-size: cover;
+    padding: 30px 12.5% 65px;
+
+    .banner_top {
+      .banner_logo_block {
+
+        .banner_top_text1 {
+          font-size: 42px;
+          line-height: 55px;
+        }
+
+        .banner_top_text2 {
+          font-size: 42px;
+          line-height: 55px;
+        }
+        a img{
+          max-width: 217px;
+        }
+      }
+
+      .banner_top_marked {
+        font-size: 42px;
+        line-height: 55px;
+
+        &:before {
+          width: 312px;
+          height: 48px;
+        }
+      }
+    }
+
+    .banner_bottom {
+      .banner_bottom_text {
+        margin-top: 73px;
+        margin-bottom: 40px;
+        max-width: 337px;
+      }
+
+      .banner_list {
+
+        .banner_item {
+          flex-basis: 130px;
+          .banner_item_img img{
+            max-width: 95px;
+          }
+          .banner_item_text {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: $white;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner {
+    background: url("https://cdn.parfums.ua/public/upload/newAdminUpload/RichContent/900542/bg_mob.jpg") center top no-repeat;
+    background-size: cover;
+    padding: 16px 0 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .banner_top {
+      .banner_logo_block {
+       a img{
+         max-width: 144px;
+       }
+
+        .banner_top_text1, .banner_top_text2 {
+          font-size: 30px;
+          line-height: 39px;
+        }
+      }
+
+      .banner_top_marked {
+        font-size: 30px;
+        line-height: 39px;
+
+        &:before {
+          left: -18px;
+          width: 235px;
+          height: 37px;
+        }
+      }
+    }
+
+    .banner_bottom {
+      display: none;
+      .banner_bottom_text {
+        margin-top: 80px;
+        margin-bottom: 48px;
+        font-size: 24px;
+        line-height: 29px;
+        color: $primary3;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: $primary3;
+        }
+      }
+
+      .banner_list {
+        display: flex;
+        flex-direction: column;
+
+        .banner_item {
+          display: flex;
+          flex-direction: row;
+
+          &:not(:last-child) {
+            margin-right: 1.8%;
+          }
+          .banner_item_img img{
+            max-width: 79px;
+          }
+          .banner_item_text {
+            font-size: 20px;
+            line-height: 20px;
+            margin-left: 60px;
+            max-width: 152px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .banner_mob{
+    display: block;
+    background: #D5D5D5;
+    padding-bottom: 36px;
+
+    .banner_bottom_text {
+      font-size: 20px;
+      line-height: 22px;
+      color: $primary3;
+      max-width: 288px;
+      margin: 0 auto 15px;
+      text-align: center;
+
+      strong {
+        font-weight: bold;
+        display: block;
+      }
+    }
+
+    .banner_list {
+      display: flex;
+      flex-direction: column;
+      max-width: 288px;
+      margin: 0 auto;
+
+      .banner_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }
+
+        .banner_item_img img{
+          max-width: 79px;
+        }
+        .banner_item_text {
+          font-size: 20px;
+          line-height: 20px;
+          margin-left: 60px;
+          max-width: 152px;
+          text-align: left;
+          color: $white;
+        }
+      }
+    }
+  }
+}
