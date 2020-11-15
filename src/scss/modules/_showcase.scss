@@ -1,0 +1,37 @@
+.showcase {
+  padding: 0 0 40px 0;
+  .showcase_top{
+    display: flex;
+    justify-content: space-around;
+
+    .top_left{
+      position: relative;
+      .title{
+        font-size: 30px;
+        line-height: 33px;
+        color: $white;
+        margin: 70px 0 20px 0;
+      }
+
+      .string{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  .showcase_bottom{
+    max-width: 848px;
+    margin: 70px auto 0;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    .text1{
+      color: $white;
+    }
+    .text2{
+      color: $primary1;
+    }
+  }
+}
