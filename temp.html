@@ -1,0 +1,527 @@
+<style type="text/css">@font-face {
+    font-family: GothamPro;
+    src: url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.eot?#iefix) format("embedded-opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.otf) format("opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.woff) format("woff"), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GothamPro;
+    src: url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.eot?#iefix) format("embedded-opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.woff) format("woff"), url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GothamPro;
+    src: url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.eot?#iefix) format("embedded-opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.woff) format("woff"), url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+.parfums-sale * {
+    font-family: GothamPro !important
+}
+
+.parfums-sale {
+    background: url(https://cdnparftop.parfums.ua/public/upload/newAdminUpload/landings/sumer_sale_20/bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    max-width: 1600px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto
+}
+
+@media (max-width: 1200px) {
+    .parfums-sale {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+.parfums-sale-content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center
+}
+
+@media (max-width: 767px) {
+    .parfums-sale-content {
+        max-width: 320px
+    }
+}
+
+.parfums-sale-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 35px
+}
+
+@media (max-width: 1550px) {
+    .parfums-sale-title {
+        font-size: 50px;
+        margin-bottom: 15px
+    }
+}
+
+@media (max-width: 767px) {
+    .parfums-sale-title {
+        font-size: 36px
+    }
+}
+
+.parfums-sale-procent {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 170px;
+    position: relative;
+    display: inline-block;
+    font-weight: 600
+}
+
+@media (max-width: 1550px) {
+    .parfums-sale-procent {
+        font-size: 150px;
+        margin-bottom: 25px
+    }
+}
+
+@media (max-width: 767px) {
+    .parfums-sale-procent {
+        font-size: 120px;
+        margin-bottom: 15px
+    }
+}
+
+.parfums-sale-procent .ball {
+    margin-left: -85px;
+    margin-top: 10px;
+    margin-right: -19px;
+    position: relative;
+    top: 30px
+}
+
+@media (max-width: 1550px) {
+    .parfums-sale-procent .ball {
+        max-width: 134px
+    }
+}
+
+@media (max-width: 767px) {
+    .parfums-sale-procent .ball {
+        max-width: 103px;
+        margin-left: -67px;
+        margin-right: -15px;
+        top: 20px
+    }
+}
+
+.parfums-sale-procent .before {
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 10px
+}
+
+@media (max-width: 1200px) {
+    .parfums-sale-procent .before {
+        top: 40px
+    }
+}
+
+@media (max-width: 767px) {
+    .parfums-sale-procent .before {
+        top: 35px;
+        font-size: 20px
+    }
+}
+
+.parfums-sale-description {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px
+}
+
+@media (max-width: 1550px) {
+    .parfums-sale-description {
+        font-size: 26px;
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width: 1550px) {
+    .parfums-sale-description {
+        font-size: 24px
+    }
+}
+
+.parfums-sale-subscr {
+    color: #ED186B;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+@media (max-width: 1550px) {
+    .parfums-sale-subscr {
+        font-size: 24px
+    }
+}
+
+.js-form_success {
+    background: #01C38B;
+    border: 2px solid #FFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: none;
+    color: #fff;
+    padding: 15px 25px 20px;
+    margin-bottom: 25px;
+    text-align: center
+}
+
+.js-form_success .check {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 15px
+}
+
+.js-form_success .check:after, .js-form_success .check:before {
+    background: #01C38B;
+    width: 4px;
+    content: "";
+    position: absolute
+}
+
+.js-form_success .check:before {
+    height: 16px;
+    transform: rotate(-50deg);
+    top: 14px;
+    left: 13px
+}
+
+.js-form_success .check:after {
+    height: 20px;
+    transform: rotate(45deg);
+    top: 10px;
+    left: 23px
+}
+
+.form-sale {
+    display: flex;
+    margin-bottom: 50px
+}
+
+@media (max-width: 1550px) {
+    .form-sale {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width: 767px) {
+    .form-sale {
+        display: block
+    }
+}
+
+.form-sale .input {
+    line-height: 55px;
+    border: 0;
+    margin-right: 30px;
+    min-width: 409px;
+    padding-left: 25px;
+    padding-top: 5px;
+    color: #444;
+    font-size: 20px
+}
+
+@media (max-width: 1200px) {
+    .form-sale .input {
+        line-height: 48px;
+        height: 48px;
+        margin-right: 10px
+    }
+}
+
+@media (max-width: 767px) {
+    .form-sale .input {
+        min-width: 100%;
+        margin-right: 0;
+        width: 100%;
+        padding-left: 15px;
+        margin-bottom: 20px
+    }
+}
+
+.form-sale .input::placeholder {
+    color: #8D8D8D;
+    font-size: 20px;
+    line-height: 70px
+}
+
+@media (max-width: 767px) {
+    .form-sale .input::placeholder {
+        font-size: 16px
+    }
+}
+
+.form-sale .button {
+    background: #ED186B;
+    border: 0;
+    line-height: 55px;
+    width: 233px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer
+}
+
+.form-sale .button:hover {
+    opacity: .8
+}
+
+@media (max-width: 1200px) {
+    .form-sale .button {
+        line-height: 48px;
+        height: 48px;
+        width: 100%
+    }
+}
+
+.clock-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+@media (max-width: 1450px) {
+    .clock-title {
+        font-size: 24px
+    }
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px
+}
+
+.clock > div {
+    margin-left: 14px;
+    margin-right: 14px
+}
+
+@media (max-width: 767px) {
+    .clock > div {
+        margin-left: 6px;
+        margin-right: 6px
+    }
+}
+
+.clock .wrap-time {
+    height: 170px;
+    width: 118px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    color: #06C;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 -3px 0 #FFF;
+    background: #EFEFEF;
+    position: relative
+}
+
+@media (max-width: 1550px) {
+    .clock .wrap-time {
+        font-size: 60px;
+        height: 130px
+    }
+}
+
+@media (max-width: 767px) {
+    .clock .wrap-time {
+        width: 60px;
+        height: 88px;
+        font-size: 40px
+    }
+}
+
+.clock .wrap-time .clock-bg-line {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.clock .wrap-time .clock-bg-line:before, .clock .wrap-time .clock-bg-line:after {
+    content: "";
+    background: linear-gradient(180deg, #F8F8FA 0%, #A3A8BD 49.48%, #C4C4C4 100%);
+    width: 4px;
+    height: 50px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    margin: auto
+}
+
+@media (max-width: 767px) {
+    .clock .wrap-time .clock-bg-line:before, .clock .wrap-time .clock-bg-line:after {
+        width: 2px;
+        height: 30px
+    }
+}
+
+.clock .wrap-time .clock-bg-line:before {
+    left: 0
+}
+
+.clock .wrap-time .clock-bg-line:after {
+    right: 0
+}
+
+.clock .wrap-time .bg {
+    position: relative
+}
+
+.clock .wrap-time:before {
+    content: "";
+    background: #A4A9BD;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: 4px
+}
+
+@media (max-width: 767px) {
+    .clock .wrap-time:before {
+        height: 2px
+    }
+}
+
+.clock .unit {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600
+}
+
+@media (max-width: 767px) {
+    .clock .unit {
+        font-size: 15px
+    }
+}
+</style>
+<main class="parfums-sale">
+    <div class="parfums-sale-content">
+        <div class="parfums-sale-title">Летняя вечериночка скоро!</div>
+
+        <div class="parfums-sale-procent"><span class="before">до</span> -7 <img alt="ball" class="ball"
+                                                                                 src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/landings/sumer_sale_20/ball.png"/>%
+        </div>
+
+        <div class="parfums-sale-description">Только 3 дня тебя ожидает волна летних скидок почти на все!</div>
+
+        <div class="parfums-sale-subscr">Подпишись, чтобы не провтыкать старт!</div>
+
+        <div class="wrap-form">
+            <form class="form-sale" id="form"><input class="input" name="email" placeholder="Ваш e-mail" type="email"/>
+                <input class="button" type="submit" value="Подписаться"/>&nbsp;
+            </form>
+
+            <div class="subscription_tooltip js-form_success">Спасибо! Ты подписался на самую крутую распродажу лета.
+                Ожидай письмо-напоминалочку :)
+            </div>
+        </div>
+
+        <div class="clock-title">До вечеринки на PARFUMS осталось:</div>
+
+        <div class="clock" id="timer">
+            <div>
+                <div class="wrap-time">
+                    <div class="clock-bg-line">&nbsp;</div>
+
+                    <div class="bg" id="days">&nbsp;</div>
+                </div>
+
+                <div class="unit">дня</div>
+            </div>
+
+            <div>
+                <div class="wrap-time">
+                    <div class="clock-bg-line">&nbsp;</div>
+
+                    <div class="bg" id="hours">&nbsp;</div>
+                </div>
+
+                <div class="unit">часов</div>
+            </div>
+
+            <div>
+                <div class="wrap-time">
+                    <div class="clock-bg-line">&nbsp;</div>
+
+                    <div class="bg" id="minutes">&nbsp;</div>
+                </div>
+
+                <div class="unit">минут</div>
+            </div>
+
+            <div>
+                <div class="wrap-time">
+                    <div class="clock-bg-line">&nbsp;</div>
+
+                    <div class="bg" id="seconds">&nbsp;</div>
+                </div>
+
+                <div class="unit">секунд</div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function setTimePage(e, t, n, o) {
+        var i = document.getElementById("days"), r = document.getElementById("hours"),
+            s = document.getElementById("minutes"), a = document.getElementById("seconds");
+        i.innerHTML = e, r.innerHTML = t, s.innerHTML = n, a.innerHTML = o
+    }
+
+    function initializeTimer() {
+        var e, t, n, o = (new Date(2020, 6, 20) - new Date) / 1e3;
+        0 < o ? (n = (t = (e = o / 60) / 60) / 24, e = 60 * (t - Math.floor(t)), n = Math.floor(n), t = Math.floor(t) - 24 * n, o = Math.floor(60 * (e - Math.floor(e))), e = Math.floor(e), setTimePage(n, t, e, o), timerId = setInterval(function () {
+            0 == o ? 0 == e ? 0 == t ? 0 == n ? showMessage(timerId) : (n--, t = 24, o = e = 59) : (t--, o = e = 59) : (e--, o = 59) : o--, setTimePage(n, t, e, o)
+        }, 1e3)) : $("#timer").hide()
+    }
+
+    window.onload = function () {
+        initializeTimer()
+    }, $(document).on("submit", "#form", function (e) {
+        e.preventDefault();
+        var t = $(this).serializeArray()[0].value;
+        if (t.length) {
+            if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(t)) return $(".js-subscription_tooltip").show(), !1;
+            $.post(window.location.pathname, {email: t, id: 26}).done(function (e) {
+                $("#form").remove(), $(".js-form_success").show()
+            }).fail(function (e) {
+                $("#form").remove(), $(".js-form_success").show()
+            })
+        }
+    });
+</script>
