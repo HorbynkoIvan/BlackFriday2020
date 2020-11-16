@@ -34,8 +34,8 @@ window.addEventListener('DOMContentLoaded', () => {
     function submitForm() {
         $(document).on('submit', '#form', function (event) {
             event.preventDefault();
-            var emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            var email = $(this).serializeArray()[0].value;
+            let emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            let email = $(this).serializeArray()[0].value;
 
             if (email.length) {
                 if (!emailRegExp.test(email)) {
