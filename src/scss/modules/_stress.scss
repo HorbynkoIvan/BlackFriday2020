@@ -102,6 +102,18 @@
 
     .promo_right {
       width: 50%;
+
+      #form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .input{}
+        .button{}
+        .subscription_tooltip{
+         // display: none;
+        }
+      }
     }
   }
 }
