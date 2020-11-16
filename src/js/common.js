@@ -12,24 +12,21 @@ import {secretsSlider} from './partials/secret_slider.js'
 import {plyrPlayer} from './partials/plyr.js'
 
 window.addEventListener('DOMContentLoaded', () => {
-    estimateSlider()
-    secretsSlider()
-    plyrPlayer()
-   /* const arrowLeft = $(".secrets").find(".arrow_left");
-    const arrowRight = $(".secrets").find(".arrow_right");
+    openMore();
 
-    const videoList = $(".secrets").find(".test");
+    function openMore() {
+        const $btnMore = $('#btn_more');
+        const $shadow = $('.about_top .shadow');
+        const $aboutBottom = $('.about_bottom');
 
-    arrowRight.on('click', function (){
-        videoList.each(function(){
-            this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-        });
-    })
+        $btnMore.on('click', function (){
+            $(this).text(function(i, text){
+                return text === "Читати повністю" ? "Згорнути" : "Читати повністю";
+            })
 
-    arrowLeft.on('click', function (){
-        videoList.each(function(){
-            this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-        });
-    })*/
+            $aboutBottom.slideToggle();
+            $shadow.fadeToggle()
+        })
+    }
 })
 
