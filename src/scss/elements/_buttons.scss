@@ -1,4 +1,4 @@
-.btn_type1{
+.btn_type1 {
   text-decoration: none;
   width: 290px;
   height: 48px;
@@ -20,74 +20,36 @@
   }
 }
 
-//.btn_type2{
-//    color: $white;
-//    width: 220px;
-//    height: 48px;
-//    background: none;
-//    text-decoration: inherit;
-//
-//    //font-size: 1rem;
-//    //padding: 1rem 2rem;
-//
-//  &.border-gradient {
-//    border: 10px solid;
-//    border-image-slice: 1;
-//    border-width: 5px;
-//    border-radius: 30px;
-//  }
-//  &.border-gradient-purple {
-//    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-//  }
-//
-//  //width: 220px;
-//  //height: 48px;
-//  //display: flex;
-//  //justify-content: center;
-//  //align-items: center;
-//  //cursor: pointer;
-//  //border: 3px solid;
-//  //border-image-source: linear-gradient(90deg, #FB5ECF 0%, #00FFF0 100%);
-//  //
-//  //
-//  ////transition: background-color 3s;
-//  //
-//  //font-size: 18px;
-//  //line-height: 22px;
-//  //color: $white;
-//  //
-//  //background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
-//  //border-radius: 30px;
-//}
-
-.sale_btn {
-  text-decoration: none;
-  width: 322px;
-  height: 77px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $primary2;
-  cursor: pointer;
-  transition: background-color 0.3s;
-
-  //font-family: $font-main;
-  font-size: 24px;
-  line-height: 110%;
+.btn_type3 {
   color: $white;
-
+  width: 220px;
+  height: 48px;
+  background: url("/assets/img/button_bg.svg") top center no-repeat;
+  background-size: cover;
+  text-decoration: inherit;
+  border-radius: 30px;
   border: none;
-  box-shadow: none;
+  outline: none;
 
-  &:hover, &:active {
-    background: darken($primary2, 15%);
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    animation: sheen 2s forwards;
+    animation-iteration-count: infinite;
+    content: '';
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -55px;
+    transform: rotateZ(-45deg);
+    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5) 50%, transparent);
   }
-}
 
-
-@media only screen and (max-width: 1024px) {
-  .sale_btn {
-    max-width: 282px;
-    width: 100%;
+  @keyframes sheen {
+    100% {
+      left: 220px;
+    }
   }
 }
