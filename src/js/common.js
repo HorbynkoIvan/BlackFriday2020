@@ -7,14 +7,13 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 import slick from 'slick-carousel';
 
-import {estimateSlider} from './partials/estimate_slider.js'
-import {secretsSlider} from './partials/secret_slider.js'
-import {plyrPlayer} from './partials/plyr.js'
+import { mindSlider } from './partials/mind_slider'
 
 window.addEventListener('DOMContentLoaded', () => {
     openMore();
     submitForm();
-    initializeTimer();
+   // initializeTimer();
+
 
     function openMore() {
         const $btnMore = $('#btn_more');
@@ -97,5 +96,9 @@ window.addEventListener('DOMContentLoaded', () => {
             0 == o ? 0 == e ? 0 == t ? 0 == n ? showMessage(timerId) : (n--, t = 24, o = e = 59) : (t--, o = e = 59) : (e--, o = 59) : o--, setTimePage(n, t, e, o)
         }, 1e3)) :
             $("#timer").hide()
+    }
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        mindSlider();
     }
 })
