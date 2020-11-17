@@ -3,9 +3,11 @@
 
   .stress_content {
     display: flex;
-    .stress_left{
+
+    .stress_left {
       position: relative;
-      .stress_comment{
+
+      .stress_comment {
         position: absolute;
         right: 0;
         top: -35px;
@@ -28,8 +30,10 @@
       }
 
     }
+
     .stress_right {
       flex-grow: 1;
+
       h3 {
         font-size: 24px;
         line-height: 27px;
@@ -49,7 +53,8 @@
             background-size: contain;
             height: 180px;
             position: relative;
-            .counter_value{
+
+            .counter_value {
               position: absolute;
               top: 50%;
               left: 50%;
@@ -103,14 +108,96 @@
     .promo_right {
       width: 50%;
 
-      #form{
+      #form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .subscription_tooltip{
-         // display: none;
+
+        .subscription_tooltip {
+          // display: none;
         }
       }
     }
   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .stress {
+    padding: 0 0 40px 0;
+
+    .stress_content {
+
+      .stress_left {
+
+        img{
+          max-width: 238px;
+        }
+
+        .stress_comment {
+          right: 0;
+          top: -35px;
+          width: 164px;
+          height: 82px;
+
+          span {
+            max-width: 130px;
+            font-size: 14px;
+          }
+        }
+
+      }
+
+      .stress_right {
+        h3 {
+          font-size: 24px;
+          line-height: 27px;
+        }
+
+        .counter {
+          display: flex;
+          margin-top: 15px;
+
+          .counter_item {
+            flex: 0 1 100%;
+
+            .counter_block {
+              background: url("/assets/img/counter_bg.jpg") top center no-repeat;
+              background-size: contain;
+              height: 129px;
+              position: relative;
+
+              .counter_value {
+                font-size: 70px;
+                line-height: 67px;
+              }
+            }
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 17px;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+
+    .promo {
+      padding: 25px 40px;
+      display: flex;
+
+      .promo_left {
+
+        h4 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .promo_right {
+
+      }
+    }
+  }
+
 }

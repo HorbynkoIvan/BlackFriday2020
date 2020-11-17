@@ -57,3 +57,43 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .spoiler {
+    padding: 0 0 55px 0;
+    .spoiler_wrapper{
+      h3{
+        font-size: 24px;
+      }
+      .spoiler_content{
+
+        .decor_text{
+          position: absolute;
+          right: 0;
+          bottom: 95px;
+          z-index: 1;
+
+          width: 905px;
+          height: 50px;
+          padding-right: 48px;
+
+          font-size: 24px;
+        }
+
+        .decor_price{
+          position: absolute;
+          right: 7px;
+          bottom: 0px;
+          z-index: -1;
+
+          width: 692px;
+          height: 50px;
+          transform: rotate(-6deg);
+          text-align: left;
+
+          padding-left: 48px;
+        }
+      }
+    }
+  }
+}
