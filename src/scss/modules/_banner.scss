@@ -5,7 +5,9 @@
   border-radius: 8px;
   overflow: hidden;
   display: flex;
-
+  .banner_mob{
+    display: none;
+  }
   .bg_left {
     flex-grow: 1;
     background: url("/assets/img/boxes_left.png") center top no-repeat;
@@ -182,7 +184,6 @@
 
 @media only screen and (max-width: 767px) {
   .banner {
-    min-height: 303px;
 
     .bg_left {
       display: none;
@@ -208,15 +209,13 @@
     }
 
     .banner_mob {
+      display: block;
       background: radial-gradient(50% 50% at 50% 50%, #C13EFF 0%, #863FED 100%);
       border-radius: 8px;
       overflow: hidden;
       position: relative;
 
       .brands_decor_text {
-        //position: absolute;
-        //top: 15px;
-        //left: -85px;
         font-size: 18px;
         line-height: 23px;
         color: $white;
@@ -259,10 +258,18 @@
       .banner_mob_bottom {
         position: relative;
 
-        .pigeon {
+        .brands_block {
           position: absolute;
-          bottom: 0;
-          right: 0;
+          bottom: 15px;
+          left: 15px;
+        }
+
+        .pigeon {
+          position: relative;
+
+          img {
+            margin-left: auto;
+          }
 
           .comment {
             background: url("/assets/img/comment2.svg") center top no-repeat;
@@ -271,13 +278,9 @@
             width: 100%;
             height: 55px;
             position: absolute;
-            right: 43%;
+            right: 31%;
             bottom: 65%;
             text-align: center;
-
-            //display: flex;
-            //justify-content: center;
-            //align-items: center;
 
             span {
               display: inline-block;
