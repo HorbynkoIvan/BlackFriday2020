@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function initializeTimer() {
-        var e, t, n, o = (new Date(2020, 10, 17) - new Date) / 1e3;
+        var e, t, n, o = (new Date(2020, 10, 28) - new Date) / 1e3;
         0 < o ?
             (n = (t = (e = o / 60) / 60) / 24, e = 60 * (t - Math.floor(t)), n = Math.floor(n), t = Math.floor(t) - 24 * n, o = Math.floor(60 * (e - Math.floor(e))), e = Math.floor(e), setTimePage(n, t, e, o), timerId = setInterval(function () {
             0 == o ? 0 == e ? 0 == t ? 0 == n ? showMessage(timerId) : (n--, t = 24, o = e = 59) : (t--, o = e = 59) : (e--, o = 59) : o--, setTimePage(n, t, e, o)
