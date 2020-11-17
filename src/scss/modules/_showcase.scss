@@ -140,3 +140,61 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .showcase {
+    padding: 0 0 20px 0;
+
+    .showcase_top {
+     flex-direction: column;
+
+      .top_left {
+        max-width: 289px;
+        margin: 0 auto 20px;
+
+        .title {
+          font-size: 25px;
+          line-height: 24px;
+          margin: 25px 0 5px 0;
+        }
+
+        .bf2020 {
+          img{
+            max-width: 347px;
+            width: 100%;
+          }
+        }
+        .decor_text {
+          left: -3px;
+          bottom: -35px;
+          z-index: 3;
+
+          width: 307.35px;
+          height: 30px;;
+
+          font-size: 20px;
+          line-height: 19px;
+        }
+
+        .decor_price {
+          left: 0px;
+          bottom: -68px;
+          z-index: 2;
+
+          width: 278.89px;
+          height: 30px;
+
+          font-size: 20px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    .showcase_bottom {
+      max-width: 289px;
+      margin: 20px auto 22px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

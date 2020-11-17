@@ -134,7 +134,50 @@
 
 
 @media only screen and (max-width: 1024px) {
+  .banner {
 
+    .bg_left {
+      background-position-x: right ;
+    }
+
+    .bg_right {
+      background-position-x: left ;
+    }
+
+    .banner_right {
+      .pigeon {
+        position: relative;
+
+        .comment {
+          background: url("/assets/img/comment2.svg") center top no-repeat;
+          background-size: cover;
+          width: 201px;
+          height: 55px;
+          position: absolute;
+          right: 50%;
+          bottom: 45%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 18px;
+            line-height: 22px;
+            color: $white;
+            max-width: 166px;
+            text-align: center;
+          }
+        }
+
+        .keep {
+          position: absolute;
+          right: -15%;
+          bottom: 45%;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {

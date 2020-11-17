@@ -28,3 +28,10 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .input{
+    max-width: 288px;
+    width: 100%;
+  }
+}
