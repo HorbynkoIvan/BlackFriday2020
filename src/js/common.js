@@ -12,7 +12,7 @@ import { mindSlider } from './partials/mind_slider'
 window.addEventListener('DOMContentLoaded', () => {
     openMore();
     submitForm();
-   // initializeTimer();
+   initializeTimer();
 
 
     function openMore() {
@@ -90,6 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function initializeTimer() {
+        var timerId='';
         var e, t, n, o = (new Date(2020, 10, 28) - new Date) / 1e3;
         0 < o ?
             (n = (t = (e = o / 60) / 60) / 24, e = 60 * (t - Math.floor(t)), n = Math.floor(n), t = Math.floor(t) - 24 * n, o = Math.floor(60 * (e - Math.floor(e))), e = Math.floor(e), setTimePage(n, t, e, o), timerId = setInterval(function () {
