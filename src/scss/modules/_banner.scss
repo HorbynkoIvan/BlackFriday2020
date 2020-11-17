@@ -137,11 +137,11 @@
   .banner {
 
     .bg_left {
-      background-position-x: right ;
+      background-position-x: right;
     }
 
     .bg_right {
-      background-position-x: left ;
+      background-position-x: left;
     }
 
     .banner_right {
@@ -181,5 +181,122 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .banner {
+    min-height: 303px;
 
+    .bg_left {
+      display: none;
+    }
+
+    .bg_right {
+      display: none;
+    }
+
+    .banner_wrapper {
+      padding: 0;
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .banner_left {
+      display: none;
+    }
+
+    .banner_right {
+      display: none;
+    }
+
+    .banner_mob {
+      background: radial-gradient(50% 50% at 50% 50%, #C13EFF 0%, #863FED 100%);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+
+      .brands_decor_text {
+        //position: absolute;
+        //top: 15px;
+        //left: -85px;
+        font-size: 18px;
+        line-height: 23px;
+        color: $white;
+        transform: rotate(-15deg);
+        position: absolute;
+        left: 16px;
+        top: 10px;
+      }
+
+      .brands_title {
+        font-size: 28px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: $primary8;
+        max-width: 288px;
+        margin: 30px auto 0;
+        text-align: center;
+      }
+
+      .brands_list {
+        list-style-type: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .item {
+          img {
+            max-width: 95px;
+            max-height: 25px;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .banner_mob_bottom {
+        position: relative;
+
+        .pigeon {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          .comment {
+            background: url("/assets/img/comment2.svg") center top no-repeat;
+            background-size: contain;
+            max-width: 169px;
+            width: 100%;
+            height: 55px;
+            position: absolute;
+            right: 43%;
+            bottom: 65%;
+            text-align: center;
+
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
+
+            span {
+              display: inline-block;
+              font-size: 14px;
+              line-height: 17px;
+              color: $white;
+              max-width: 149px;
+              text-align: center;
+              margin-top: 5px;
+            }
+          }
+
+          .keep {
+            position: absolute;
+            right: 20px;
+            bottom: 13px;
+          }
+        }
+      }
+    }
+  }
 }
