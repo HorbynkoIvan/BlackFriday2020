@@ -5,7 +5,8 @@
   border-radius: 8px;
   overflow: hidden;
   display: flex;
-
+  cursor: pointer;
+  text-decoration: none;
   .banner_mob {
     display: none;
   }
@@ -46,19 +47,25 @@
     }
 
     .brands_title {
-      font-family: $font-medium !important;
-      //font-size: 47px;
-      font-size: 36px;
-      line-height: 1;
       text-transform: uppercase;
       color: $primary8;
       //max-width: 420px;
       max-width: 480px;
       margin-top: 8px;
+      .title1{
+        font-family: $font-medium !important;
+        font-size: 47px;
+        line-height: 1;
+      }
+      .title2{
+        font-family: $font-medium !important;
+        font-size: 40px;
+        line-height: 1;
+      }
     }
 
     .brands_list {
-      margin-top: 20px;
+      margin-top: 10px;
       max-width: 500px;
       list-style-type: none;
       display: flex;
@@ -178,8 +185,13 @@
 
     .banner_left {
       .brands_title {
-        font-size: 30px;
         max-width: 380px;
+        .title1{
+          font-size: 42px;
+        }
+        .title2{
+          font-size: 36px;
+        }
       }
 
       .brands_list {
@@ -257,13 +269,21 @@
       }
 
       .brands_title {
-        font-size: 28px;
-        line-height: 34px;
         text-transform: uppercase;
         color: $primary8;
         max-width: 288px;
         margin: 30px auto 0;
         text-align: center;
+        .title1{
+          font-family: $font-medium !important;
+          font-size: 28px;
+          line-height: 34px;
+        }
+        .title2{
+          font-family: $font-medium !important;
+          font-size: 28px;
+          line-height: 34px;
+        }
       }
 
       .brands_list {
