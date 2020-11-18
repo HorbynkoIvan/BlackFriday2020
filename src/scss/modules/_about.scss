@@ -1,6 +1,6 @@
 .about {
   padding: 74px 0 60px 0;
-
+  color: #637381;
   h2, h3, h4 {
     font-weight: bold;
     margin-bottom: 30px;
@@ -12,8 +12,6 @@
     font-size: 14px;
     color: #637381;
   }
-
-
 
   .about_top {
     display: flex;
@@ -31,6 +29,9 @@
 
         li:not(:last-child) {
           margin-bottom: 30px;
+        }
+        li{
+          font-size: 14px;
         }
       }
     }
@@ -67,6 +68,10 @@
 
         li:not(:last-child) {
           margin-bottom: 30px;
+        }
+
+        li{
+          font-size: 14px;
         }
       }
     }
