@@ -5,7 +5,7 @@
     line-height: 36px;
     text-align: center;
     color: $white;
-    margin: 0 0 18px 0;
+    margin: 0 0 25px 0;
     font-family: $font-medium !important;
   }
 
@@ -37,14 +37,17 @@
         text-align: center;
         color: $white;
         min-height: 60px;
-        margin-top: 10px;
+        margin-top: 15px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
       }
 
       .mind_item_text{
         font-size: 18px;
         line-height: 22px;
         color: $white;
-        margin-top: 18px;
+        margin-top: 25px;
         text-align: center;
         span{
           font-weight: bold;
@@ -75,7 +78,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .mind {
 
     .mind_title {
@@ -115,6 +118,28 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .mind {
+
+    .mind_title {
+    }
+
+    .mind_list {
+
+      .mind_item {
+
+        h3{
+          min-height: 72px;
+        }
+
+        .mind_item_text{
+
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .mind {
 
@@ -146,7 +171,7 @@
           font-size: 14px;
           line-height: 17px;
           text-align: center;
-          margin-top: 0;
+          margin-top: 20px;
         }
       }
     }
