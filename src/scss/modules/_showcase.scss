@@ -33,13 +33,19 @@
         font-size: 30px;
         line-height: 33px;
         color: $black;
+        span{
+          font-family: $font-medium !important;
+        }
       }
 
       .decor_price {
-        position: absolute;
+        span {
+          font-family: $font-medium !important;
+        }
+          position: absolute;
         left: -48px;
         bottom: 22px;
-        z-index: -1;
+        z-index: 0;
 
         width: 444.21px;
         height: 60px;
@@ -81,7 +87,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .showcase {
     padding: 0 0 40px 0;
 
@@ -117,7 +123,7 @@
           position: absolute;
           left: -48px;
           bottom: 22px;
-          z-index: -1;
+          z-index: 0;
 
           width: 346px;
           height: 50px;
@@ -141,6 +147,42 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .showcase {
+
+    .showcase_top {
+
+      .top_left {
+
+        .title {
+          //margin: 50px 0 5px 0;
+          margin: 25px 0 5px 0;
+        }
+
+        .bf2020 {
+          img{
+            max-width: 235px;
+          }
+        }
+
+        .decor_text {
+          //width: 700px;
+          //bottom: 93px;
+          //bottom: 88px;
+
+          width: 750px;
+          bottom: 77px;
+        }
+
+        .decor_price {
+          //bottom: 22px;
+          bottom: 19px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .showcase {
     padding: 0 0 20px 0;
@@ -151,6 +193,7 @@
       .top_left {
         max-width: 289px;
         margin: 0 auto 20px;
+        width: 100%;
 
         .title {
           font-size: 25px;
@@ -187,6 +230,10 @@
           font-size: 20px;
           line-height: 19px;
         }
+      }
+
+      .top_right {
+        width: 100%;
       }
     }
 

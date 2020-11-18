@@ -14,6 +14,21 @@
   .about_top{
     display: flex;
     position: relative;
+    .top_right{
+      ul{
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 40px;
+
+        li:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
+    }
     .top_left{
       margin-right: 30px;
     }
@@ -31,10 +46,29 @@
   }
   .about_bottom{
     display: none;
+
+    .about_mob{
+      ul{
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 40px;
+
+        li:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
   .about_btn_row{
     display: flex;
     justify-content: center;
+    .btn_type3{
+      font-family: $font-medium !important;
+    }
   }
 }
 
@@ -55,7 +89,7 @@
     line-height: 17px;
 
     .about_top{
-      max-width: 300px;
+      max-width: 286px;
       margin: 0 auto;
       .top_left{
         margin: 0;

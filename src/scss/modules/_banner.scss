@@ -5,19 +5,23 @@
   border-radius: 8px;
   overflow: hidden;
   display: flex;
-  .banner_mob{
+
+  .banner_mob {
     display: none;
   }
+
   .bg_left {
     flex-grow: 1;
-    background: url("/assets/img/boxes_left.png") center top no-repeat;
+    background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/boxes_left.png") center top no-repeat;
     background-size: cover;
+    background-position-x: right;
   }
 
   .bg_right {
     flex-grow: 1;
-    background: url("/assets/img/boxes_right.png") center top no-repeat;
+    background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/boxes_right.png") center top no-repeat;
     background-size: cover;
+    background-position-x: left;
   }
 
   .banner_wrapper {
@@ -34,7 +38,7 @@
     .brands_decor_text {
       position: absolute;
       top: 15px;
-      left: -85px;
+      left: -70px;
       font-size: 20px;
       line-height: 26px;
       color: $white;
@@ -104,7 +108,7 @@
       position: relative;
 
       .comment {
-        background: url("/assets/img/comment2.svg") center top no-repeat;
+        background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment2.svg") center top no-repeat;
         background-size: cover;
         width: 201px;
         height: 55px;
@@ -127,7 +131,7 @@
 
       .keep {
         position: absolute;
-        right: -15%;
+        right: -10%;
         bottom: 45%;
       }
     }
@@ -151,7 +155,7 @@
         position: relative;
 
         .comment {
-          background: url("/assets/img/comment2.svg") center top no-repeat;
+          background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment2.svg") center top no-repeat;
           background-size: cover;
           width: 201px;
           height: 55px;
@@ -174,7 +178,71 @@
 
         .keep {
           position: absolute;
-          right: -15%;
+          right: -10%;
+          bottom: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .banner {
+
+    .banner_wrapper {
+      flex: 0 1 600px;
+      padding: 0 20px;
+    }
+
+    .banner_left {
+      .brands_title {
+        font-size: 36px;
+        //max-width: 480px;
+        // margin-top: 8px;
+      }
+
+      .brands_list {
+        margin-top: 20px;
+      }
+    }
+
+    .bg_left {
+      background-position-x: right;
+    }
+
+    .bg_right {
+      background-position-x: left;
+    }
+
+    .banner_right {
+      .pigeon {
+        position: relative;
+
+        .comment {
+          background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment2.svg") center top no-repeat;
+          background-size: cover;
+          width: 201px;
+          height: 55px;
+          position: absolute;
+          right: 50%;
+          bottom: 45%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 18px;
+            line-height: 22px;
+            color: $white;
+            max-width: 166px;
+            text-align: center;
+          }
+        }
+
+        .keep {
+          position: absolute;
+          right: -10%;
           bottom: 45%;
         }
       }
@@ -272,7 +340,7 @@
           }
 
           .comment {
-            background: url("/assets/img/comment2.svg") center top no-repeat;
+            background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment2.svg") center top no-repeat;
             background-size: contain;
             max-width: 169px;
             width: 100%;

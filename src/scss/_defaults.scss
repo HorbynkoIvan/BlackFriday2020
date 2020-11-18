@@ -8,7 +8,7 @@ body {
 
 body {
 	//font-family: $font-main;
-	background: $black;
+
 }
 
 .popup-opened{
@@ -28,6 +28,9 @@ body {
 
 .black_friday_2020.container *{
 	font-family: $font-main !important;
+}
+.black_friday_2020.container{
+	background: $black;
 }
 
 .img-wr {
@@ -55,6 +58,10 @@ img{
 .container {
 	@include min-max(320px, 100%, 0);
 	overflow: hidden;
+
+	//styles to remove wrapper on server side styles
+	max-width: initial !important;
+	padding: 0!important;
 }
 
 .wrap {

@@ -99,7 +99,11 @@ window.addEventListener('DOMContentLoaded', () => {
             $("#timer").hide()
     }
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (window.innerWidth < 768) {
         mindSlider();
     }
+
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //     mindSlider();
+    // }
 })
