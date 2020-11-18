@@ -46,7 +46,9 @@
     }
 
     .brands_title {
-      font-size: 47px;
+      font-family: $font-medium !important;
+      //font-size: 47px;
+      font-size: 36px;
       line-height: 1;
       text-transform: uppercase;
       color: $primary8;
@@ -56,6 +58,7 @@
     }
 
     .brands_list {
+      margin-top: 20px;
       max-width: 500px;
       list-style-type: none;
       display: flex;
@@ -63,9 +66,6 @@
       justify-content: space-between;
 
       .item {
-        //img {
-        //  max-width: 95px;
-        //}
         &:not(:last-child) {
           margin-right: 20px;
         }
@@ -121,7 +121,7 @@
         align-items: center;
 
         span {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 22px;
           color: $white;
           max-width: 166px;
@@ -155,25 +155,7 @@
         position: relative;
 
         .comment {
-          background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment2.svg") center top no-repeat;
-          background-size: cover;
-          width: 201px;
-          height: 55px;
-          position: absolute;
-          right: 50%;
-          bottom: 45%;
 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          span {
-            font-size: 18px;
-            line-height: 22px;
-            color: $white;
-            max-width: 166px;
-            text-align: center;
-          }
         }
 
         .keep {
@@ -196,9 +178,8 @@
 
     .banner_left {
       .brands_title {
-        font-size: 36px;
-        //max-width: 480px;
-        // margin-top: 8px;
+        font-size: 30px;
+        max-width: 380px;
       }
 
       .brands_list {
@@ -219,25 +200,7 @@
         position: relative;
 
         .comment {
-          background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment2.svg") center top no-repeat;
-          background-size: cover;
-          width: 201px;
-          height: 55px;
-          position: absolute;
-          right: 50%;
-          bottom: 45%;
 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          span {
-            font-size: 18px;
-            line-height: 22px;
-            color: $white;
-            max-width: 166px;
-            text-align: center;
-          }
         }
 
         .keep {
