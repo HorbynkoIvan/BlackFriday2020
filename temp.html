@@ -1,629 +1,441 @@
-<style type="text/css">@font-face {
-    font-family: GothamPro;
-    src: url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.eot?#iefix) format("embedded-opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.otf) format("opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.woff) format("woff"), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: GothamPro;
-    src: url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.eot?#iefix) format("embedded-opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.woff) format("woff"), url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.ttf) format("truetype");
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: GothamPro;
-    src: url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.eot?#iefix) format("embedded-opentype"), url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.woff) format("woff"), url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal
-}
-
-.parfums-sale * {
-    font-family: GothamPro !important
-}
-
-.parfums-sale {
-    background: url(https://cdnparftop.parfums.ua/public/upload/newAdminUpload/landings/sumer_sale_20/bg.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    max-width: 1600px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: auto
-}
-
-@media (max-width: 1200px) {
-    .parfums-sale {
-        padding-left: 15px;
-        padding-right: 15px
-    }
-}
-
-.parfums-sale-content {
-    max-width: 700px;
-    margin: auto;
-    text-align: center
-}
-
-@media (max-width: 767px) {
-    .parfums-sale-content {
-        max-width: 320px
-    }
-}
-
-.parfums-sale-title {
-    color: #fff;
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 35px
-}
-
-@media (max-width: 1550px) {
-    .parfums-sale-title {
-        font-size: 50px;
-        margin-bottom: 15px
-    }
-}
-
-@media (max-width: 767px) {
-    .parfums-sale-title {
-        font-size: 36px
-    }
-}
-
-.parfums-sale-procent {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 170px;
-    position: relative;
-    display: inline-block;
-    font-weight: 600
-}
-
-@media (max-width: 1550px) {
-    .parfums-sale-procent {
-        font-size: 150px;
-        margin-bottom: 25px
-    }
-}
-
-@media (max-width: 767px) {
-    .parfums-sale-procent {
-        font-size: 120px;
-        margin-bottom: 15px
-    }
-}
-
-.parfums-sale-procent .ball {
-    margin-left: -85px;
-    margin-top: 10px;
-    margin-right: -19px;
-    position: relative;
-    top: 30px
-}
-
-@media (max-width: 1550px) {
-    .parfums-sale-procent .ball {
-        max-width: 134px
-    }
-}
-
-@media (max-width: 767px) {
-    .parfums-sale-procent .ball {
-        max-width: 103px;
-        margin-left: -67px;
-        margin-right: -15px;
-        top: 20px
-    }
-}
-
-.parfums-sale-procent .before {
-    font-size: 30px;
-    position: absolute;
-    top: 50px;
-    left: 10px
-}
-
-@media (max-width: 1200px) {
-    .parfums-sale-procent .before {
-        top: 40px
-    }
-}
-
-@media (max-width: 767px) {
-    .parfums-sale-procent .before {
-        top: 35px;
-        font-size: 20px
-    }
-}
-
-.parfums-sale-description {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 50px
-}
-
-@media (max-width: 1550px) {
-    .parfums-sale-description {
-        font-size: 26px;
-        margin-bottom: 30px
-    }
-}
-
-@media (max-width: 1550px) {
-    .parfums-sale-description {
-        font-size: 24px
-    }
-}
-
-.parfums-sale-subscr {
-    color: #ED186B;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 15px
-}
-
-@media (max-width: 1550px) {
-    .parfums-sale-subscr {
-        font-size: 24px
-    }
-}
-
-.js-form_success {
-    background: #01C38B;
-    border: 2px solid #FFF;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: none;
-    color: #fff;
-    padding: 15px 25px 20px;
-    margin-bottom: 25px;
-    text-align: center
-}
-
-.js-form_success .check {
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    margin: 0 auto 15px
-}
-
-.js-form_success .check:after, .js-form_success .check:before {
-    background: #01C38B;
-    width: 4px;
-    content: "";
-    position: absolute
-}
-
-.js-form_success .check:before {
-    height: 16px;
-    transform: rotate(-50deg);
-    top: 14px;
-    left: 13px
-}
-
-.js-form_success .check:after {
-    height: 20px;
-    transform: rotate(45deg);
-    top: 10px;
-    left: 23px
-}
-
-.form-sale {
-    display: flex;
-    margin-bottom: 50px
-}
-
-@media (max-width: 1550px) {
-    .form-sale {
-        margin-bottom: 30px
-    }
-}
-
-@media (max-width: 767px) {
-    .form-sale {
-        display: block
-    }
-}
-
-.form-sale .input {
-    line-height: 55px;
-    border: 0;
-    margin-right: 30px;
-    min-width: 409px;
-    padding-left: 25px;
-    padding-top: 5px;
-    color: #444;
-    font-size: 20px
-}
-
-@media (max-width: 1200px) {
-    .form-sale .input {
-        line-height: 48px;
-        height: 48px;
-        margin-right: 10px
-    }
-}
-
-@media (max-width: 767px) {
-    .form-sale .input {
-        min-width: 100%;
-        margin-right: 0;
-        width: 100%;
-        padding-left: 15px;
-        margin-bottom: 20px
-    }
-}
-
-.form-sale .input::placeholder {
-    color: #8D8D8D;
-    font-size: 20px;
-    line-height: 70px
-}
-
-@media (max-width: 767px) {
-    .form-sale .input::placeholder {
-        font-size: 16px
-    }
-}
-
-.form-sale .button {
-    background: #ED186B;
-    border: 0;
-    line-height: 55px;
-    width: 233px;
-    font-size: 20px;
-    border-radius: 10px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer
-}
-
-.form-sale .button:hover {
-    opacity: .8
-}
-
-@media (max-width: 1200px) {
-    .form-sale .button {
-        line-height: 48px;
-        height: 48px;
-        width: 100%
-    }
-}
-
-.clock-title {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px
-}
-
-@media (max-width: 1450px) {
-    .clock-title {
-        font-size: 24px
-    }
-}
-
-.clock {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px
-}
-
-.clock > div {
-    margin-left: 14px;
-    margin-right: 14px
-}
-
-@media (max-width: 767px) {
-    .clock > div {
-        margin-left: 6px;
-        margin-right: 6px
-    }
-}
-
-.clock .wrap-time {
-    height: 170px;
-    width: 118px;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 80px;
-    display: flex;
-    align-items: center;
-    color: #06C;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    box-shadow: 0 -3px 0 #FFF;
-    background: #EFEFEF;
-    position: relative
-}
-
-@media (max-width: 1550px) {
-    .clock .wrap-time {
-        font-size: 60px;
-        height: 130px
-    }
-}
-
-@media (max-width: 767px) {
-    .clock .wrap-time {
-        width: 60px;
-        height: 88px;
-        font-size: 40px
-    }
-}
-
-.clock .wrap-time .clock-bg-line {
-    position: absolute;
-    width: 100%;
-    height: 100%
-}
-
-.clock .wrap-time .clock-bg-line:before, .clock .wrap-time .clock-bg-line:after {
-    content: "";
-    background: linear-gradient(180deg, #F8F8FA 0%, #A3A8BD 49.48%, #C4C4C4 100%);
-    width: 4px;
-    height: 50px;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    display: block;
-    margin: auto
-}
-
-@media (max-width: 767px) {
-    .clock .wrap-time .clock-bg-line:before, .clock .wrap-time .clock-bg-line:after {
-        width: 2px;
-        height: 30px
-    }
-}
-
-.clock .wrap-time .clock-bg-line:before {
-    left: 0
-}
-
-.clock .wrap-time .clock-bg-line:after {
-    right: 0
-}
-
-.clock .wrap-time .bg {
-    position: relative
-}
-
-.clock .wrap-time:before {
-    content: "";
-    background: #A4A9BD;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    height: 4px
-}
-
-@media (max-width: 767px) {
-    .clock .wrap-time:before {
-        height: 2px
-    }
-}
-
-.clock .unit {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600
-}
-
-@media (max-width: 767px) {
-    .clock .unit {
-        font-size: 15px
-    }
-}
-</style>
-<main class="parfums-sale">
-    <div class="parfums-sale-content">
-        <div class="parfums-sale-title">Летняя вечериночка скоро!</div>
-
-        <div class="parfums-sale-procent"><span class="before">до</span> -7 <img alt="ball" class="ball"
-                                                                                 src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/landings/sumer_sale_20/ball.png"/>%
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black Friday 2020</title>
+</head>
+<body>
+<div class="black_friday_2020 container">
+    <section class="showcase">
+        <div class="showcase_wrapper wrap">
+            <div class="showcase_top">
+                <div class="top_left">
+                    <p class="title">Ой, что несется</p>
+                    <div class="bf2020">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/bf2020.svg"
+                             alt="black friday">
+                    </div>
+                    <div class="decor_text"><span>Покупай онлайн,</span></div>
+                    <div class="decor_price"><span>а не это все!</span></div>
+                </div>
+                <div class="top_right img-wr">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/showcase_picture.jpg"
+                         alt="picture">
+                </div>
+            </div>
+            <div class="showcase_bottom">
+                <p class="text1">Слоган 2020 – Stay Home. Вот оставайся дома и на Черную пятницу.</p>
+                <p class="text2">Смени шопинг-ад на шопинг-рай. Покупай онлайн!</p>
+            </div>
         </div>
+    </section>
 
-        <div class="parfums-sale-description">Только 3 дня тебя ожидает волна летних скидок почти на все!</div>
-
-        <div class="parfums-sale-subscr">Подпишись, чтобы не провтыкать старт!</div>
-
-        <div class="wrap-form">
-            <form class="form-sale" id="form"><input class="input" name="email" placeholder="Ваш e-mail" type="email"/>
-                <input class="button" type="submit" value="Подписаться"/>&nbsp;
-            </form>
-
-            <div class="subscription_tooltip js-form_success">Спасибо! Ты подписался на самую крутую распродажу лета.
-                Ожидай письмо-напоминалочку :)
+    <section class="stress">
+        <div class="stress_wrapper wrap">
+            <div class="stress_content">
+                <div class="stress_left">
+                    <div class="stress_comment">
+                        <span>- Серьезно? Кто-то до сих пор шопится оффлайн? Ну не гоните!</span>
+                    </div>
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/stress_picture.png"
+                         alt="picture">
+                </div>
+                <div class="stress_right">
+                    <h3 class="title">Врываемся на грандиозный СЕЙЛ года через...</h3>
+                    <ul class="counter">
+                        <li class="counter_item">
+                            <div class="counter_block">
+                                <span id="days" class="counter_value">11</span>
+                            </div>
+                            <p class="counter_text">Дней</p>
+                        </li>
+                        <li class="counter_item">
+                            <div class="counter_block">
+                                <span id="hours" class="counter_value">10</span>
+                            </div>
+                            <p class="counter_text">Часов</p>
+                        </li>
+                        <li class="counter_item">
+                            <div class="counter_block">
+                                <span id="minutes" class="counter_value">5</span>
+                            </div>
+                            <p class="counter_text">Минут</p>
+                        </li>
+                        <li class="counter_item">
+                            <div class="counter_block">
+                                <span id="seconds" class="counter_value">59</span>
+                            </div>
+                            <p class="counter_text">Секунд</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="promo">
+                <div class="promo_left">
+                    <h4>Покупай онлайн без стресса!</h4>
+                    <p>Регистрируйся сейчас, чтобы не провтыкать самый большой сейл года. Мы вышлем уведомление о старте
+                        распродажи желаемой косметики и парфюмерии.</p>
+                </div>
+                <div class="promo_right">
+                    <form id="form">
+                        <input class="input" name="email" placeholder="Твой e-mail" type="email"/>
+                        <button class="btn_type2 button">Подписаться на скидки</button>
+                        <div class="subscription_tooltip js-subscription_tooltip">Некорректно введенные данные</div>
+                    </form>
+                </div>
             </div>
         </div>
 
-        <div class="clock-title">До вечеринки на PARFUMS осталось:</div>
+    </section>
 
-        <div class="clock" id="timer">
-            <div>
-                <div class="wrap-time">
-                    <div class="clock-bg-line">&nbsp;</div>
-
-                    <div class="bg" id="days">&nbsp;</div>
+    <section class="spoiler">
+        <div class="spoiler_wrapper wrap">
+            <h3>Хочешь первый спойлер? Это будет нечтооо!</h3>
+            <div class="spoiler_content">
+                <div class="decor_img img-wr">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/spoiler.png"
+                         alt="spoiler">
                 </div>
+                <div class="decor_text"><span>На Black Friday тебя ожидают подарки на общую сумму</span></div>
 
-                <div class="unit">дня</div>
-            </div>
+                <div class="decor_text1_mob"><span>На Black Friday тебя ожидают</span></div>
+                <div class="decor_mob"></div>
+                <div class="decor_text2_mob"><span>подарки на общую сумму</span></div>
 
-            <div>
-                <div class="wrap-time">
-                    <div class="clock-bg-line">&nbsp;</div>
-
-                    <div class="bg" id="hours">&nbsp;</div>
-                </div>
-
-                <div class="unit">часов</div>
-            </div>
-
-            <div>
-                <div class="wrap-time">
-                    <div class="clock-bg-line">&nbsp;</div>
-
-                    <div class="bg" id="minutes">&nbsp;</div>
-                </div>
-
-                <div class="unit">минут</div>
-            </div>
-
-            <div>
-                <div class="wrap-time">
-                    <div class="clock-bg-line">&nbsp;</div>
-
-                    <div class="bg" id="seconds">&nbsp;</div>
-                </div>
-
-                <div class="unit">секунд</div>
+                <div class="decor_price"><span>800 000 грн</span></div>
             </div>
         </div>
-    </div>
-</main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    function setTimePage(e, t, n, o) {
-        var i = document.getElementById("days"), r = document.getElementById("hours"),
-            s = document.getElementById("minutes"), a = document.getElementById("seconds");
-        i.innerHTML = e, r.innerHTML = t, s.innerHTML = n, a.innerHTML = o
-    }
+    </section>
 
-    function initializeTimer() {
-        var e, t, n, o = (new Date(2020, 6, 20) - new Date) / 1e3;
-        0 < o ? (n = (t = (e = o / 60) / 60) / 24, e = 60 * (t - Math.floor(t)), n = Math.floor(n), t = Math.floor(t) - 24 * n, o = Math.floor(60 * (e - Math.floor(e))), e = Math.floor(e), setTimePage(n, t, e, o), timerId = setInterval(function () {
-            0 == o ? 0 == e ? 0 == t ? 0 == n ? showMessage(timerId) : (n--, t = 24, o = e = 59) : (t--, o = e = 59) : (e--, o = 59) : o--, setTimePage(n, t, e, o)
-        }, 1e3)) : $("#timer").hide()
-    }
-
-    window.onload = function () {
-        initializeTimer()
-    }, $(document).on("submit", "#form", function (e) {
-        e.preventDefault();
-        var t = $(this).serializeArray()[0].value;
-        if (t.length) {
-            if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(t)) return $(".js-subscription_tooltip").show(), !1;
-            $.post(window.location.pathname, {email: t, id: 26}).done(function (e) {
-                $("#form").remove(), $(".js-form_success").show()
-            }).fail(function (e) {
-                $("#form").remove(), $(".js-form_success").show()
-            })
-        }
-    });
-</script>
-
-<div class="bf_parf_seo js_bf_parf_seo">
-    <div>
-        <div>
-            <div><h1>Что такое Черная пятница</h1>
-                <div>Black Friday пришла к нам из США - страны, знающей толк в культуре потребления. Американская
-                    традиция устраивать Блэк Фрайдей прижилась и у нас, хотя на украинском рынке она наиболее широко
-                    представлена именно на онлайн-платформах. Как бы то ни было, настоящие любители шопинга уже с начала
-                    ноября (а может, и раньше) строят грандиозные планы на покупки и предвкушают распродажи Черной
-                    пятницы.
+    <section class="mind wrap">
+        <h2 class="mind_title">Как не потерять голову на BLACK FRIDAY?</h2>
+        <ul class="mind_list slider">
+            <li class="mind_item">
+                <div class="mind_item_img">
+                    <div class="img_main img-wr">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/mind4.png"
+                             alt="mind">
+                    </div>
                 </div>
+                <h3>Составляй вишлисты</h3>
+                <p class="mind_item_text">
+                    Подготовься заранее. Добавь товары, о которых мечтаешь, в список «Мои желания» на PARFUMS. Кликай на сердечки</p>
+            </li>
+            <li class="mind_item">
+                <div class="mind_item_img img-wr">
+                    <div class="img_main">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/mind5.png"
+                             alt="mind">
+                    </div>
+
+                </div>
+                <h3>Держи дистанцию от псевдоскидок</h3>
+                <p class="mind_item_text">Не покупай в надоедливых местах, где магазины увеличивают цены перед Черной Пятницей, а потом делают псевдоскидки. Покупай на PARFUMS. Здесь все по-честному
+                </p>
+            </li>
+            <li class="mind_item">
+                <div class="mind_item_img">
+                    <div class="img_main img-wr">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/mind6.png"
+                             alt="mind">
+                    </div>
+
+                </div>
+                <h3>Stay Home – покупай онлайн</h3>
+                <p class="mind_item_text">В магазинах кипиш, очереди, море людей, стресс. Оно тебе надо? Покупай косметику и духи на PARFUMS</p>
+            </li>
+        </ul>
+
+        <div class="promo">
+            <div class="promo_text">
+                <p class="text1">Не хочешь ждать Black Friday?</p>
+                <p class="text2">Ищи актуальные акции и предложения здесь и сейчас!</p>
             </div>
-            <div><h2>Любопытные факты</h2>
-                <p>Ежегодно в период распродажи Блекфрайдей покупатели тратят крупные суммы, которые по подсчетам
-                    составляют более 50 миллиардов долларов! Да-да, как ВВП небольшого европейского государства,
-                    например Литвы или Болгарии.</p>
-                <p>Черная пятница в Украине имеет свои особенности. Многие сотрудники в этот день норовят взять
-                    больничный или выходной, чтобы в полной мере насладиться шопингом. Некоторым счастливчикам это
-                    удается. И только работникам сферы торговли рассчитывать на отпуск в Black Friday не приходится.</p>
-                <p>Вслед за головокружительными акциями Черной пятницы следует еще одно событие - Киберпонедельник. Но
-                    откладывать желанные покупки до понедельника слишком рискованно, ведь ассортимент товаров не
-                    резиновый.</p>
-                <p>Некоторые безумцы накануне Блэк Фрайдей несколько дней ночуют перед гипермаркетами, чтобы первыми
-                    попасть внутрь и забрать долгожданные товары. Согласитесь, куда удобнее поставить будильник на
-                    полночь и быстрее всех заглянуть на любимый сайт за выгодными покупками.</p>
-                <p>Мало того, во время такого ажиотажа не обойтись без курьезов: за прошедшие годы были зафиксированы
-                    как очень смешные случаи, связанные с Блекфрайдей, так и драматические. Например, во время давки в
-                    магазинах нередко случаются травмы и даже драки. Однажды разгоряченные покупатели устроили драку
-                    из-за вафельницу, которая стоила $ 2! Чем не аргумент в пользу онлайн-покупок? ;)</p></div>
+            <div class="promo_btn">
+                <a class="btn_type1" href="#">Что там у вас?</a>
+            </div>
         </div>
-        <div>
-            <div><h2>Блэк Фрайдей на PARFUMS</h2>
-                <div>«Черная пятница 2020 Украина» будет проходить 27 ноября. Вот тогда-то и начнется самое интересное,
-                    так как ее формат предполагает не просто скидки, а настоящий обвал цен. Без сомнений, это самый
-                    подходящий день, чтобы порадовать себя и близких крутыми обновками. Да еще получить отличную
-                    возможность приобрести много-много подарков к зимним праздникам. И не будем сбрасывать со счетов
-                    азарт предстоящего мероприятия, ведь лучшее получит тот, кто быстрее и проворнее остальных.
+    </section>
+    <section class="shopping">
+        <div class="shopping_wrapper wrap">
+            <ul class="shopping_list">
+                <li class="shopping_list_item">
+                    <a href="https://parfums.ua/ua/category/parfums" class="shopping_cart">
+                        <div class="shopping_cart_img">
+                            <img
+                                    src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/parfums.png"
+                                    alt="parfums">
+                        </div>
+                        <span class="shopping_cart_text">Духи</span>
+                    </a>
+                </li>
+                <li class="shopping_list_item">
+                    <a href="https://parfums.ua/ua/category/makeup" class="shopping_cart">
+                        <div class="shopping_cart_img">
+                            <img
+                                    src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/makeup.png"
+                                    alt="makeup">
+                        </div>
+                        <span class="shopping_cart_text">Макияж</span>
+                    </a>
+                </li>
+                <li class="shopping_list_item">
+                    <a href="https://parfums.ua/ua/category/hair-cosmetics" class="shopping_cart">
+                        <div class="shopping_cart_img">
+                            <img
+                                    src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/for_hair.png"
+                                    alt="hair">
+                        </div>
+                        <span class="shopping_cart_text">Волосы</span>
+                    </a>
+                </li>
+                <li class="shopping_list_item">
+                    <a href="https://parfums.ua/ua/category/cosmetics-for-nails" class="shopping_cart">
+                        <div class="shopping_cart_img">
+                            <img
+                                    src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/for_face.png"
+                                    alt="face">
+                        </div>
+                        <span class="shopping_cart_text">Для лица</span>
+                    </a>
+                </li>
+                <li class="shopping_list_item">
+                    <a href="https://parfums.ua/ua/category/baby-care" class="shopping_cart">
+                        <div class="shopping_cart_img">
+                            <img
+                                    src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/for_body.png"
+                                    alt="body">
+                        </div>
+                        <span class="shopping_cart_text">Для тела</span>
+                    </a>
+                </li>
+                <li class="shopping_list_item">
+                    <a href="https://parfums.ua/ua/category/bytovaya_khimiya" class="shopping_cart">
+                        <div class="shopping_cart_img">
+                            <img
+                                    src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/for_home.png"
+                                    alt="home">
+                        </div>
+                        <span class="shopping_cart_text">Все для дома</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="bg_left"></div>
+        <div class="banner_wrapper wrap">
+            <div class="banner_left">
+                <div class="brands_decor_text">Уруру!</div>
+                <div class="brands_title">
+                    Бесплатная доставка красоты
                 </div>
-            </div>
-            &nbsp;
-            <div><b>PARFUMS делится советом:</b> чтобы остаться довольным покупками на 100%, заранее проявите смекалку.
-                Например, прежде чем с головой нырнуть в удивительный мир Black Friday 2020, определите свой бюджет.
-                Затем зайдите в личный кабинет и добавьте в список избранного то, что приглянулось. Но учтите: тяжело
-                предугадать все. Тем более в день Х, когда на вашем пути могут встретиться другие предложения, от
-                которых отказаться будет ой как непросто. Поэтому на всякий случай выделите экстрафонд и постарайтесь не
-                потерять голову :)
-            </div>
-            <div>
-                <div>А мы уже подготовились очень основательно и раскрываем вам некоторые детали:</div>
-                <ul>
-                    <li>В нашей Черной пятнице принимают участие все категории: «Парфюмерия», «Волосы», «Макияж», «Уход
-                        за лицом», «Все для дома», «Детям и мамам» и т.д.
+                <ul class="brands_list">
+                    <li class="item np">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/delivery/img/np.svg"
+                             alt="nova poshta">
                     </li>
-                    <li>Скидки в Черную пятницу будут распространяться на множество брендовых бестселлеров.</li>
-                    <li>Наш удобный интерфейс в вашем полном распоряжении.</li>
-                    <li>Еще вас ждут приятные гарантированные подарки.</li>
-                    <li>Все заказы мы как можно скорее доставим в любой уголок страны. Так что, праздник шопинга «Черная
-                        пятница» Киев и другие города Украины встретят вместе.
+                    <li class="item justin">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/delivery/img/justin.svg"
+                             alt="justin">
+                    </li>
+                    <li class="item meest">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/delivery/img/meets.svg"
+                             alt="meest">
+                    </li>
+                    <li class="item ukrposhta">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/delivery/img/ukrposhta.svg"
+                             alt="ukrposhta">
+                    </li>
+                    <li class="item kp">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/delivery/img/kasta.svg"
+                             alt="kasta post">
                     </li>
                 </ul>
             </div>
+            <div class="banner_right">
+                <div class="pigeon">
+                    <div class="comment">
+                        <span>Быстро летаю, красоту доставляю!</span>
+                    </div>
+                    <div class="keep">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/logo_keep.svg"
+                             alt="logo_keep">
+                    </div>
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/pigeon.png"
+                         alt="pigeon">
+                </div>
+            </div>
+
+            <div class="banner_mob">
+                <div class="brands_decor_text">Уруру!</div>
+                <div class="brands_title">
+                    Бесплатная доставка красоты
+                </div>
+                <div class="banner_mob_bottom">
+                    <div class="brands_block">
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/brands_list.png"
+                             alt="">
+                    </div>
+                    <div class="pigeon">
+                        <div class="comment">
+                            <span>Быстро летаю, красоту доставляю!</span>
+                        </div>
+                        <div class="keep">
+                            <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/logo_keep.svg"
+                                 alt="logo_keep">
+                        </div>
+                        <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/pigeon_mob.png"
+                             alt="pigeon">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    &nbsp;
-    <div>
-        <div>Помимо всевозможных акций, затеваются классные активности, среди которых розыгрыши (мы знаем, как вы их
-            любите). Чтобы ничего не пропустить, обязательно следите за последними новостями на почте и в соцсетях.
-        </div>
-        <p>Желаем яркой Черной пятницы!</p>
-        &nbsp;
-        <div>Часто задаваемые вопросы о Black Friday</div>
-        &nbsp;
-        <div class="bf_parf_seo_faq">
-            <div>
-                <div>Что такое черная пятница?</div>
+        <div class="bg_right"></div>
+    </section>
+    <section class="about">
+        <div class="about_wrapper wrap">
+            <div class="about_top">
+                <div class="top_left">
+                    <h2>Что такое Черная пятница</h2>
+
+                    <p>Black Friday пришла к нам из США - страны, знающей толк в культуре потребления. Американская
+                        традиция устраивать Блэк Фрайдей прижилась и у нас, хотя на украинском рынке она наиболее широко
+                        представлена именно на онлайн-платформах. Как бы то ни было, настоящие любители шопинга уже с начала
+                        ноября (а может, и раньше) строят грандиозные планы на покупки и предвкушают распродажи Черной
+                        пятницы.
+
+                    </p>
+
+                    <h2>Любопытные факты</h2>
+
+                    <p>Ежегодно в период распродажи Блекфрайдей покупатели тратят крупные суммы, которые по подсчетам
+                        составляют более 50 миллиардов долларов! Да-да, как ВВП небольшого европейского государства,
+                        например Литвы или Болгарии.</p>
+
+                    <p>Черная пятница в Украине имеет свои особенности. Многие сотрудники в этот день норовят взять
+                        больничный или выходной, чтобы в полной мере насладиться шопингом. Некоторым счастливчикам это
+                        удается. И только работникам сферы торговли рассчитывать на отпуск в Black Friday не приходится.</p>
+                    <p>Вслед за головокружительными акциями Черной пятницы следует еще одно событие - Киберпонедельник. Но
+                        откладывать желанные покупки до понедельника слишком рискованно, ведь ассортимент товаров не
+                        резиновый.</p>
+
+                    <p>Некоторые безумцы накануне Блэк Фрайдей несколько дней ночуют перед гипермаркетами, чтобы первыми
+                        попасть внутрь и забрать долгожданные товары. Согласитесь, куда удобнее поставить будильник на
+                        полночь и быстрее всех заглянуть на любимый сайт за выгодными покупками.</p>
+
+                    <p>Мало того, во время такого ажиотажа не обойтись без курьезов: за прошедшие годы были зафиксированы
+                        как очень смешные случаи, связанные с Блекфрайдей, так и драматические. Например, во время давки в
+                        магазинах нередко случаются травмы и даже драки. Однажды разгоряченные покупатели устроили драку
+                        из-за вафельницу, которая стоила $ 2! Чем не аргумент в пользу онлайн-покупок? ;)</p>
+
+
+                </div>
+                <div class="top_right">
+                    <h2>Блэк Фрайдей на PARFUMS</h2>
+
+                    <p>«Черная пятница 2020 Украина» будет проходить 27 ноября. Вот тогда-то и начнется самое интересное,
+                        так как ее формат предполагает не просто скидки, а настоящий обвал цен. Без сомнений, это самый
+                        подходящий день, чтобы порадовать себя и близких крутыми обновками. Да еще получить отличную
+                        возможность приобрести много-много подарков к зимним праздникам. И не будем сбрасывать со счетов
+                        азарт предстоящего мероприятия, ведь лучшее получит тот, кто быстрее и проворнее остальных.
+                    </p>
+
+                    <p><b>PARFUMS делится советом:</b> чтобы остаться довольным покупками на 100%, заранее проявите смекалку.
+                        Например, прежде чем с головой нырнуть в удивительный мир Black Friday 2020, определите свой бюджет.
+                        Затем зайдите в личный кабинет и добавьте в список избранного то, что приглянулось. Но учтите: тяжело
+                        предугадать все. Тем более в день Х, когда на вашем пути могут встретиться другие предложения, от
+                        которых отказаться будет ой как непросто. Поэтому на всякий случай выделите экстрафонд и постарайтесь не
+                        потерять голову :)
+                    </p>
+                    <p>А мы уже подготовились очень основательно и раскрываем вам некоторые детали:</p>
+                    <ul>
+                        <li>В нашей Черной пятнице принимают участие все категории: «Парфюмерия», «Волосы», «Макияж», «Уход
+                            за лицом», «Все для дома», «Детям и мамам» и т.д.
+                        </li>
+                        <li>Скидки в Черную пятницу будут распространяться на множество брендовых бестселлеров.</li>
+                        <li>Наш удобный интерфейс в вашем полном распоряжении.</li>
+                        <li>Еще вас ждут приятные гарантированные подарки.</li>
+                        <li>Все заказы мы как можно скорее доставим в любой уголок страны. Так что, праздник шопинга «Черная
+                            пятница» Киев и другие города Украины встретят вместе.
+                        </li>
+                    </ul>
+                </div>
+                <div class="shadow"></div>
+            </div>
+            <div class="about_bottom">
+
+                <div class="about_mob">
+                    <h2>Блэк Фрайдей на PARFUMS</h2>
+
+                    <p>«Черная пятница 2020 Украина» будет проходить 27 ноября. Вот тогда-то и начнется самое интересное,
+                        так как ее формат предполагает не просто скидки, а настоящий обвал цен. Без сомнений, это самый
+                        подходящий день, чтобы порадовать себя и близких крутыми обновками. Да еще получить отличную
+                        возможность приобрести много-много подарков к зимним праздникам. И не будем сбрасывать со счетов
+                        азарт предстоящего мероприятия, ведь лучшее получит тот, кто быстрее и проворнее остальных.
+                    </p>
+
+                    <p><b>PARFUMS делится советом:</b> чтобы остаться довольным покупками на 100%, заранее проявите смекалку.
+                        Например, прежде чем с головой нырнуть в удивительный мир Black Friday 2020, определите свой бюджет.
+                        Затем зайдите в личный кабинет и добавьте в список избранного то, что приглянулось. Но учтите: тяжело
+                        предугадать все. Тем более в день Х, когда на вашем пути могут встретиться другие предложения, от
+                        которых отказаться будет ой как непросто. Поэтому на всякий случай выделите экстрафонд и постарайтесь не
+                        потерять голову :)
+                    </p>
+                    <p>А мы уже подготовились очень основательно и раскрываем вам некоторые детали:</p>
+                    <ul>
+                        <li>В нашей Черной пятнице принимают участие все категории: «Парфюмерия», «Волосы», «Макияж», «Уход
+                            за лицом», «Все для дома», «Детям и мамам» и т.д.
+                        </li>
+                        <li>Скидки в Черную пятницу будут распространяться на множество брендовых бестселлеров.</li>
+                        <li>Наш удобный интерфейс в вашем полном распоряжении.</li>
+                        <li>Еще вас ждут приятные гарантированные подарки.</li>
+                        <li>Все заказы мы как можно скорее доставим в любой уголок страны. Так что, праздник шопинга «Черная
+                            пятница» Киев и другие города Украины встретят вместе.
+                        </li>
+                    </ul>
+                </div>
+                <p>Помимо всевозможных акций, затеваются классные активности, среди которых розыгрыши (мы знаем, как вы их
+                    любите). Чтобы ничего не пропустить, обязательно следите за последними новостями на почте и в соцсетях.
+                </p>
+
+
+                <h3>Желаем яркой Черной пятницы!</h3>
+
+                <h3>Что такое черная пятница?</h3>
                 <p>Black Friday - главная распродажа года, которая пришла к нам из США и стала мегапопулярной во многих
                     странах мира. Она проводится каждую осень и может длиться от одного дня до недели. Сегодня это
-                    отличная возможность приобрести даже самые люксовые продукты с огромной скидкой.</p></div>
-            &nbsp;
-            <div>
-                <div>Черная пятница 2020 когда?</div>
+                    отличная возможность приобрести даже самые люксовые продукты с огромной скидкой.</p>
+
+
+                <h3>Черная пятница 2020 когда?</h3>
                 <p>Ежегодно Блэк Фрайдей проходит в последнюю пятницу осени. В 2020 году распродажи начнутся 27
-                    ноября.</p></div>
-            &nbsp;
-            <div>
-                <div>Когда «Черная пятница» 2020 начинается в PARFUMS?</div>
+                    ноября.</p>
+
+
+                <h4>Когда «Черная пятница» 2020 начинается в PARFUMS?</h4>
                 <p>В PARFUMS Блекфрайдей также стартует 27 ноября, ровно в 00:00. И продлится целых три дня, аж до 29
-                    ноября. В этот период вы сможете выгодно приобрести все приглянувшиеся товары</p></div>
-            &nbsp;
-            <div>
-                <div>Какие акции и скидки в Черную пятницу ждать?</div>
+                    ноября. В этот период вы сможете выгодно приобрести все приглянувшиеся товары</p>
+
+
+                <h4>Какие акции и скидки в Черную пятницу ждать?</h4>
+
                 <p>В 2020 Black Friday на сайте PARFUMS вас ждет до -80% на все топовые категории: «Парфюмерия»,
                     «Макияж», «Волосы», «Уход за лицом», «Все для дома», «Детям и мамам», «Дерматокосметика», «Для
                     тела», «Мужчинам», «Ногти», «Салонная косметика». В распродаже принимают участие крутые бренды. Еще
                     мы постоянно совершенствуем интерфейс, чтобы вам было максимально удобно совершать покупки, а также
-                    подготовили гарантированные подарки.</p></div>
+                    подготовили гарантированные подарки.</p>
+
+
+            </div>
+            <div class="about_btn_row">
+                <button id="btn_more" class="btn_type3">Читать полностью</button>
+            </div>
         </div>
-    </div>
-    <section class="bf_parf_seo_btn_shadow js_bf_parf_seo_btn_shadow" style="display: none;">
-        <button class="button_btn_show js_button_btn_show">Детальнее</button>
     </section>
 </div>
+</body>
+</html>
