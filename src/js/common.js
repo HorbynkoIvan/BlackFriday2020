@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         $btnMore.on('click', function () {
             $(this).text(function (i, text) {
-                return text === "Читати повністю" ? "Згорнути" : "Читати повністю";
+                return text === "Читать полностью" ? "Свернуть" : "Читать полностью";
             })
 
             $aboutBottom.slideToggle();
