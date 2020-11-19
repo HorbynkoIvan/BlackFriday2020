@@ -7,12 +7,12 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 import slick from 'slick-carousel';
 
-import { mindSlider } from './partials/mind_slider'
+import {mindSlider} from './partials/mind_slider'
 
 window.addEventListener('DOMContentLoaded', () => {
     openMore();
     submitForm();
-   initializeTimer();
+    initializeTimer();
 
 
     function openMore() {
@@ -45,8 +45,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 $.post(window.location.pathname, {email: email, id: 30})
                     .done(function (response) {
-                        $('.bf_parf_form_wrap').html('');
-                        $('.bf_parf_form_wrap').html(' <div class="second_screen js_form_success">\n' +
+                        debugger
+                        $('#form').html('');
+                        $('#form').html(' <div class="second_screen js_form_success">\n' +
                             '                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
                             '                            <circle cx="24" cy="24" r="22.5" stroke="#00FFF0" stroke-width="3"/>\n' +
                             '                            <path d="M15 23.0963L23.0125 31.1088L35 19.1213" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>\n' +
@@ -63,8 +64,8 @@ window.addEventListener('DOMContentLoaded', () => {
                         })
                     })
                     .fail(function (data) {
-                        $('.bf_parf_form_wrap').html('');
-                        $('.bf_parf_form_wrap').html(' <div class="second_screen js_form_success">\n' +
+                        $('#form').html('');
+                        $('#form').html(' <div class="second_screen js_form_success">\n' +
                             '                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
                             '                            <circle cx="24" cy="24" r="22.5" stroke="#00FFF0" stroke-width="3"/>\n' +
                             '                            <path d="M15 23.0963L23.0125 31.1088L35 19.1213" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>\n' +
@@ -90,12 +91,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function initializeTimer() {
-        var timerId='';
+        var timerId = '';
         var e, t, n, o = (new Date(2020, 10, 28) - new Date) / 1e3;
         0 < o ?
             (n = (t = (e = o / 60) / 60) / 24, e = 60 * (t - Math.floor(t)), n = Math.floor(n), t = Math.floor(t) - 24 * n, o = Math.floor(60 * (e - Math.floor(e))), e = Math.floor(e), setTimePage(n, t, e, o), timerId = setInterval(function () {
-            0 == o ? 0 == e ? 0 == t ? 0 == n ? showMessage(timerId) : (n--, t = 24, o = e = 59) : (t--, o = e = 59) : (e--, o = 59) : o--, setTimePage(n, t, e, o)
-        }, 1e3)) :
+                0 == o ? 0 == e ? 0 == t ? 0 == n ? showMessage(timerId) : (n--, t = 24, o = e = 59) : (t--, o = e = 59) : (e--, o = 59) : o--, setTimePage(n, t, e, o)
+            }, 1e3)) :
             $("#timer").hide()
     }
 
