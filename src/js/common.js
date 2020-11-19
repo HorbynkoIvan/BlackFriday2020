@@ -45,7 +45,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 $.post(window.location.pathname, {email: email, id: 30})
                     .done(function (response) {
-                        debugger
                         $('#form').html('');
                         $('#form').html(' <div class="second_screen js_form_success">\n' +
                             '                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
@@ -53,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
                             '                            <path d="M15 23.0963L23.0125 31.1088L35 19.1213" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>\n' +
                             '                        </svg>\n' +
                             '\n' +
-                            '                        <div>Вы подписаны</div>\n' +
+                            '                        <div>Ви підписались</div>\n' +
                             '                    </div>');
 
                         dataLayer.push({
@@ -71,7 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
                             '                            <path d="M15 23.0963L23.0125 31.1088L35 19.1213" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>\n' +
                             '                        </svg>\n' +
                             '\n' +
-                            '                        <div>Вы уже подписаны</div>\n' +
+                            '                        <div>Ви вже підписались</div>\n' +
                             '                    </div>');
                     });
             }
