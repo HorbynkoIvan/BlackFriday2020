@@ -120,6 +120,14 @@
         .btn_type2{
           font-family: $font-medium !important;
         }
+
+        .second_screen{
+          text-align: center;
+          color: $white;
+          div{
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
