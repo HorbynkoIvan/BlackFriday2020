@@ -51,7 +51,7 @@
         }
 
         function submitForm() {
-            $(document).on('submit', '#form', function (event) {
+            $(document).on('submit', '.black_friday_2020 #bf2020_form', function (event) {
                 event.preventDefault();
                 let emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 let email = $(this).serializeArray()[0].value;
@@ -59,14 +59,14 @@
                 if (email.length) {
                     if (!emailRegExp.test(email)) {
                         email.classList.add('error');
-                        $('.js-subscription_tooltip').show();
+                        $('.js-subscription_tooltip_bf2020').show();
                         return false;
                     }
 
                     $.post(window.location.pathname, {email: email, id: 30})
                         .done(function (response) {
-                            $('#form').html('');
-                            $('#form').html(' <div class="second_screen js_form_success">\n' +
+                            $('.black_friday_2020 #bf2020_form').html('');
+                            $('.black_friday_2020 #bf2020_form').html(' <div class="second_screen js_form_success">\n' +
                                 '                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
                                 '                            <circle cx="24" cy="24" r="22.5" stroke="#00FFF0" stroke-width="3"/>\n' +
                                 '                            <path d="M15 23.0963L23.0125 31.1088L35 19.1213" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>\n' +
@@ -83,8 +83,8 @@
                             })
                         })
                         .fail(function (data) {
-                            $('#form').html('');
-                            $('#form').html(' <div class="second_screen js_form_success">\n' +
+                            $('.black_friday_2020 #bf2020_form').html('');
+                            $('.black_friday_2020 #bf2020_form').html(' <div class="second_screen js_form_success">\n' +
                                 '                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
                                 '                            <circle cx="24" cy="24" r="22.5" stroke="#00FFF0" stroke-width="3"/>\n' +
                                 '                            <path d="M15 23.0963L23.0125 31.1088L35 19.1213" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>\n' +
