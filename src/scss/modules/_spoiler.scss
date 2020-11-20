@@ -1,5 +1,6 @@
 .spoiler {
-  padding: 0 0 190px 0;
+ //padding: 0 0 190px 0;
+  padding: 0 0 135px 0;
 
   .spoiler_wrapper {
     position: relative;
@@ -84,7 +85,8 @@
 
 @media only screen and (max-width: 1024px) {
   .spoiler {
-    padding: 0 0 55px 0;
+    //padding: 0 0 55px 0;
+    padding: 0 0 10px 0;
 
     .spoiler_wrapper {
       h3 {
